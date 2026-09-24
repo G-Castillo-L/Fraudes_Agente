@@ -43,7 +43,7 @@ CREATE TEMP FUNCTION NORM_TDA_NUM(x STRING) AS (
 -- INPUT TABLES
 -- ============================================================
 
--- CREATE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.UNIV_INI_P AS (
+-- CREATE OR REPLACE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.UNIV_INI_P AS (
 --   WITH 
 --   UNIV_INI_AUX AS (
 --     SELECT
@@ -130,7 +130,7 @@ CREATE TEMP FUNCTION NORM_TDA_NUM(x STRING) AS (
 -- );
 
 
--- CREATE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.UNIV_P AS (
+-- CREATE OR REPLACE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.UNIV_P AS (
 --   WITH
 --   UNIV_PRTNCIA AS (
 --     SELECT 
@@ -359,7 +359,7 @@ CREATE TEMP FUNCTION NORM_TDA_NUM(x STRING) AS (
 --     AND DOB6 IS NOT NULL
 -- );
 
--- CREATE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_ERN_KEYS_P AS (
+-- CREATE OR REPLACE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_ERN_KEYS_P AS (
 --   WITH KEY_CURP AS (
 --     SELECT DISTINCT
 --       KEY_VAL AS CURP18
@@ -458,7 +458,7 @@ CREATE TEMP FUNCTION NORM_TDA_NUM(x STRING) AS (
 -- );
 
 
--- CREATE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_AUT_KEYS_P AS (
+-- CREATE OR REPLACE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_AUT_KEYS_P AS (
 --   WITH KEY_CURP AS (
 --     SELECT DISTINCT
 --       KEY_VAL AS CURP18
@@ -525,7 +525,7 @@ CREATE TEMP FUNCTION NORM_TDA_NUM(x STRING) AS (
 --     AND DOB6 IS NOT NULL
 -- );
 
--- CREATE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_ERN_KEYS_HIST_P AS (
+-- CREATE OR REPLACE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_ERN_KEYS_HIST_P AS (
 --   WITH KEY_CURP AS (
 --     SELECT DISTINCT KEY_VAL AS CURP18
 --     FROM crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_KEYS_P
@@ -592,7 +592,7 @@ CREATE TEMP FUNCTION NORM_TDA_NUM(x STRING) AS (
 --     AND DOB6 IS NOT NULL
 -- );
 
--- CREATE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_TRJ_P AS (
+-- CREATE OR REPLACE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_TRJ_P AS (
 --   WITH KEY_STATS AS (
 --     SELECT
 --       CTA_CVE, COUNT(1) AS CNT_KEYS
@@ -1495,7 +1495,7 @@ CREATE TEMP FUNCTION NORM_TDA_NUM(x STRING) AS (
 --     ON O.ID_ROW = B.ID_ROW
 -- );
 
--- CREATE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_CTA_P AS (
+-- CREATE OR REPLACE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.BIO_CTA_P AS (
 --   WITH CTA_LIST AS (
 --     SELECT DISTINCT CTA_CVE
 --     FROM crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.UNIV_P
@@ -1582,7 +1582,7 @@ CREATE TEMP FUNCTION NORM_TDA_NUM(x STRING) AS (
 -- ============================================================
 -- RESULT + MATCH_INV
 -- ============================================================
--- CREATE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.RESULT_FINAL_P AS (
+-- CREATE OR REPLACE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.RESULT_FINAL_P AS (
 --   WITH 
 --   CURP_ENR_U AS (
 --     SELECT DISTINCT
@@ -1862,7 +1862,7 @@ CREATE TEMP FUNCTION NORM_TDA_NUM(x STRING) AS (
 -- SCORECARD MENSUAL
 -- TOTAL / LIVERPOOL / SUBURBIA
 -- ============================================================
-CREATE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.SCORECARD_EJECUTIVO_P AS (
+CREATE OR REPLACE TABLE crp-dev-dominio-negfin.mus_dev_mis_wrk_tbls.SCORECARD_EJECUTIVO_P AS (
   WITH BASE_SCORECARD_UNI AS (
     SELECT
       CASE
