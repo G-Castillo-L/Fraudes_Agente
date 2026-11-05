@@ -1,6 +1,6 @@
 # Arquitectura de Agentes: Prueba SHIELD/BQ V2
 
-Repositorio de control de versiones para la configuración, conectores, base de conocimiento e instrucciones (*prompts*) del ecosistema de agentes **SHIELD/BQ V2** en Gemini Enterprise Plus.
+Repositorio de control de versiones para la configuración, conectores, base de conocimiento e instrucciones (*prompts*) del ecosistema de agentes **SHIELD QA V2** en Gemini Enterprise Plus.
 
 ## Mapa de Arquitectura y Componentes
 
