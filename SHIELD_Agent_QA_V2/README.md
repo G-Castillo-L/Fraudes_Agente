@@ -10,7 +10,3 @@ Repositorio de control de versiones para la configuración, conectores, base de 
 | **Subagente 1** | `Subagente_1_Analista` | `agents/01_subagente_1_analista.md` | Gemini 4 Argon | `DB DC BQ crp pro dig ge`, `Google Search` | *(Inyectado por Orquestador)* |
 | **Subagente 2** | `Subagente_2_Constructor_Excel` | `agents/02_subagente_2_constructor_excel.md` | Gemini 4 Argon | `DB DC BQ crp pro dig ge`, `drive` | *(Inyectado por Orquestador)* |
 | **Subagente 3** | `Subagente_3_Redactor_PDF` | `agents/03_subagente_3_redactor_pdf.md` | Gemini 4 Argon | `DB DC BQ crp pro dig ge` | *(Inyectado por Orquestador)* |
-
-## Notas de Versionado y Despliegue
-1. **Modificación de Prompts:** Edita directamente el archivo correspondiente dentro del directorio `/agents/`. Todo el contenido debajo del encabezado `---` (YAML Frontmatter) corresponde exactamente al campo **Instructions** en la Web App de Gemini Enterprise Plus.
-2. **Homologación de Identificadores:** Verificar en revisiones futuras que el nombre configurado en el Subagente 1 (`Subagente_1_Analista`) coincida exactamente con la invocación en la Fase 1 del Orquestador (`Subagente_1_Analista_Forense`).
