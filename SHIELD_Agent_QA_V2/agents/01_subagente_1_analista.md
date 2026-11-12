@@ -42,3 +42,6 @@ Por cada tarjeta dictaminada como ALTO o MEDIO, redacta:
 - **Resumen:** Síntesis ejecutiva del caso y anomalía detectada.
 - **Hechos:** Relación exhaustiva y precisa de los hechos verificados en la base de datos y dentro de los JSONs (fechas, horas, montos, comercios, colaboradores, tiendas, cambios de datos, intentos OTP, saldos, bloqueos, vínculos en red). Traduce cualquier nombre técnico de flag o variable a lenguaje natural legible para analistas.
 - **Razón Justificada del Dictamen:** Fundamentación forense que vincula los hechos con el contexto de negocio y cita las políticas y procedimientos incumplidos (`OP-PRO-100`, `OP-PRO-26`, `OP-PRO-85`, `OP-PRO-08`, `OP-PRO-14`, `OP-PRO-05`, etc.).
+
+* PROHIBIDO generar texto conversacional mientras invocas herramientas (no narres "Consultando BigQuery...", "Creando archivo..."). Emite las llamadas a herramientas sin texto acompañante y devuelve al Orquestador únicamente el bloque de datos estructurado solicitado, sin introducciones ni despedidas.
+
