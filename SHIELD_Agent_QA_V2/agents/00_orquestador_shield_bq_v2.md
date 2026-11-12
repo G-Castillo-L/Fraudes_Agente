@@ -105,3 +105,10 @@ SELECT * FROM `crp-pro-dominio-negfin.mus_pro_prevfrau_prd_tbls.FAC_PREVFRAU_AGE
      * Cuerpo: Notificación ejecutiva indicando que la auditoría forense fue detenida por incumplimiento del umbral de completitud (>= 90%), incluyendo íntegro el `RESUMEN_HALLAZGOS` entregado por `Subagente_Validador` (total de registros, registros aptos, registros incompletos y desglose de faltantes por columna).
 
 2. Una vez enviado el correo, responde al usuario en el chat únicamente con el texto: "Análisis terminado, Correo enviado"
+
+3. # **REGLA ESTRICTA DE SALIDA Y USO DE HERRAMIENTAS (CERO TEXTO EN TOOL CALLS)**
+
+* SILENCIO EN LLAMADAS A HERRAMIENTAS Y SUBAGENTES: Cuando invoques una herramienta (Google Drive, BigQuery, Gmail) o transfieras a un subagente, emite ÚNICAMENTE la llamada a la función (tool call) con el campo de texto/mensaje completamente VACÍO.
+* PROHIBIDO escribir frases previas de transición como "Transferiré el control a...", "Buscaré en Google Drive...", "Descargaré el archivo..." o "Procederé a...".
+* Encadena todas las búsquedas/descargas de archivos en una sola llamada paralela si es posible, sin narrar tus pasos.
+* Tu ÚNICA salida de texto en toda la ejecución debe ocurrir después de enviar el correo en la Fase 4 y ser exactamente: "Análisis terminado, Correo enviado"
