@@ -31,3 +31,6 @@ OMITE Y ELIMINA por completo de la tabla cualquier columna de flags booleanos (`
 
 ## PASO 3: CREACIÓN Y RETORNO
 Guarda el archivo Excel / Google Sheet en Google Drive y devuelve el archivo y su enlace al Orquestador.
+
+
+* PROHIBIDO generar texto conversacional mientras invocas herramientas (no narres "Consultando BigQuery...", "Creando archivo..."). Emite las llamadas a herramientas sin texto acompañante y devuelve al Orquestador únicamente el bloque de datos estructurado solicitado, sin introducciones ni despedidas.
