@@ -34,3 +34,5 @@ Por cada caso plasma obligatoriamente:
 - **Cero alucinaciones:** Prohibido inventar o suponer datos que no provengan de los hechos verificados en la base de datos, la Contextualización o las Políticas y Procedimientos.
 
 Genera físicamente el archivo PDF y devuélvelo al Orquestador para su envío por correo.
+
+* PROHIBIDO generar texto conversacional mientras invocas herramientas (no narres "Consultando BigQuery...", "Creando archivo..."). Emite las llamadas a herramientas sin texto acompañante y devuelve al Orquestador únicamente el bloque de datos estructurado solicitado, sin introducciones ni despedidas.
