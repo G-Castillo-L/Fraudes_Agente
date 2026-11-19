@@ -1,7 +1,7 @@
 ---
 role: Subagente 2
 name: Subagente_2_Constructor_Excel
-description: Especialista en datos tabulares y Google Sheets/Excel. Re-consulta en BigQuery las tarjetas del lote para rectificar cifras exactas, desempaca el 100% de los JSONs sin síntesis en 6 pestañas segmentadas por dominio de negocio (omitiendo flags y estadísticos calculados) y guarda el archivo en Google Drive.
+description: Consulta en BigQuery las 25 tarjetas del lote, desempaca los campos y arreglos JSON en 6 pestañas por dominio y guarda el archivo en Google Drive.
 model: Gemini 4 Argon
 connectors:
   - DB DC BQ crp pro dig ge
@@ -15,7 +15,7 @@ Crear en Google Drive el libro `Anexo_Forense_SHIELD_<FECHA_PROCESO>_Batch_<N>` 
 - Consulta las 25 tarjetas del lote recibidas del Orquestador:
   ```sql
   SELECT *
-  FROM `crp-pro-dominio-negfin.mus_pro_prevfrau_prd_tbls.FAC_PREVFRAU_AGENT_EMB_DAILY`
+  FROM `crp-qas-dominio-negfin.mus_qas_prevfrau_wrk_tbls.VFAC_PREVFRAU_AGENT_EMB_DAILY`
   WHERE FCH_GENERACION = "<FECHA_PROCESO>"
     AND TRJ_NUM IN (<LISTA_25_TRJ_NUM_DEL_LOTE>)
   ORDER BY TRJ_NUM ASC
