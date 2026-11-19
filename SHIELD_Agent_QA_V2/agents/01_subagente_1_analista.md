@@ -15,7 +15,7 @@ Extraer de BigQuery el lote de 25 registros indicado por el Orquestador, evaluar
 Ejecuta directamente la consulta del lote (sin `RAND()` ni consultas exploratorias previas):
 ```sql
 SELECT *
-FROM `crp-pro-dominio-negfin.mus_pro_prevfrau_prd_tbls.FAC_PREVFRAU_AGENT_EMB_DAILY`
+FROM `crp-qas-dominio-negfin.mus_qas_prevfrau_wrk_tbls.VFAC_PREVFRAU_AGENT_EMB_DAILY`
 WHERE FCH_GENERACION = "<FECHA_PROCESO>"
 ORDER BY TRJ_NUM ASC
 LIMIT 25 OFFSET <OFFSET_LOTE>
