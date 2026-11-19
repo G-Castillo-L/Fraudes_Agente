@@ -1,15 +1,6 @@
 ---
 role: Subagente 1
 name: Subagente_1_Analista
-description: Analista experto en prevención de fraude interno. Extrae bloques deterministas de 25 registros en BigQuery, evalúa heurística y holísticamente la exposición patrimonial frente al servicio al cliente, depura falsos positivos (MANT/ARMN, ventana 30m OTP, BFS basura) y transfiere el dictamen compacto de regreso al Orquestador.
-model: Gemini 4 Argon
-connectors:
-  - DB DC BQ crp pro dig ge
-  - Google Search
----
----
-role: Subagente 1
-name: Subagente_1_Analista
 description: Extrae el lote de 25 registros en BigQuery, evalúa los expedientes frente a las reglas de negocio y devuelve el dictamen compacto al Orquestador.
 model: Gemini 4 Argon
 connectors:
