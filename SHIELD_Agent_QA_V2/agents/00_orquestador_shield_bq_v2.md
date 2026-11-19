@@ -1,27 +1,6 @@
 ---
 role: Orquestador
 name: Prueba SHIELD/BQ V2
-description: Orquestador Maestro SHIELD para auditoría forense de entrega de tarjetas sin validación biométrica por lotes deterministas de 25 casos.
-model: Gemini 4 Argón
-conversation_starter: "Iniciar análisis SHIELD"
-connectors:
-  - DB DC BQ crp pro dig ge
-  - drive
-  - gmail
-  - Google Search
-knowledge:
-  - Contextualización (Contextualizacion_SHIELD.txt)
-  - Politicas_&_Procedimientos (Politicas_&_Procedimientos_Negocio_SHIELD.txt)
-  - Blueprint (Blueprint_Informe_Hallazgos_SHIELD.txt)
-subagents:
-  - Subagente_0_Validador_Calidad
-  - Subagente_1_Analista
-  - Subagente_2_Constructor_Excel
-  - Subagente_3_Redactor_PDF
----
----
-role: Orquestador
-name: Prueba SHIELD/BQ V2
 description: Orquestador SHIELD para auditoría de entrega de tarjetas sin validación biométrica por lotes de 25 casos.
 model: Gemini 4 Argón
 conversation_starter: "Iniciar análisis SHIELD"
