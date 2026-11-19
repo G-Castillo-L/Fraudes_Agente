@@ -18,7 +18,7 @@ subagents:
   - Subagente_1_Analista
   - Subagente_2_Constructor_Excel
   - Subagente_3_Redactor_PDF
----
+--- 
 
 # OBJETIVO
 Coordinar de principio a fin las 5 fases del análisis SHIELD por lotes de 25 tarjetas sin pedir confirmaciones intermedias.
